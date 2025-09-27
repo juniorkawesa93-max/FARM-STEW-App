@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Buttons Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Button Collection</h1>
+            <p>Click any button to see it in action!</p>
+        </header>
+
+        <main>
+            <section class="button-grid">
+                <!-- Counter Buttons -->
+                <div class="button-group">
+                    <h3>Counter</h3>
+                    <div class="counter-display">
+                        <span id="counter">0</span>
+                    </div>
+                    <div class="button-row">
+                        <button id="increment" class="btn btn-primary">+1</button>
+                        <button id="decrement" class="btn btn-secondary">-1</button>
+                        <button id="reset" class="btn btn-outline">Reset</button>
+                    </div>
+                </div>
+
+                <!-- Color Changer -->
+                <div class="button-group">
+                    <h3>Theme Switcher</h3>
+                    <div id="color-preview" class="color-preview"></div>
+                    <div class="button-row">
+                        <button id="red-theme" class="btn btn-red">Red</button>
+                        <button id="blue-theme" class="btn btn-blue">Blue</button>
+                        <button id="green-theme" class="btn btn-green">Green</button>
+                        <button id="dark-theme" class="btn btn-dark">Dark</button>
+                    </div>
+                </div>
+
+                <!-- Text Generator -->
+                <div class="button-group">
+                    <h3>Random Quote</h3>
+                    <div id="quote-display" class="quote-display">
+                        Click below to get inspired!
+                    </div>
+                    <button id="generate-quote" class="btn btn-primary">Generate Quote</button>
+                </div>
+
+                <!-- Interactive Elements -->
+                <div class="button-group">
+                    <h3>Interactive Actions</h3>
+                    <div class="button-row">
+                        <button id="show-alert" class="btn btn-warning">Show Alert</button>
+                        <button id="toggle-visibility" class="btn btn-info">Toggle Box</button>
+                        <button id="animate-btn" class="btn btn-success">Animate</button>
+                    </div>
+                    <div id="toggle-box" class="toggle-box">
+                        I can be hidden and shown!
+                    </div>
+                </div>
+
+                <!-- Form Actions -->
+                <div class="button-group">
+                    <h3>Form Demo</h3>
+                    <input type="text" id="user-input" placeholder="Enter your name..." class="input-field">
+                    <div class="button-row">
+                        <button id="greet-btn" class="btn btn-primary">Greet Me</button>
+                        <button id="clear-input" class="btn btn-outline">Clear</button>
+                    </div>
+                    <div id="greeting-output" class="output-display"></div>
+                </div>
+
+                <!-- Timer -->
+                <div class="button-group">
+                    <h3>Timer</h3>
+                    <div id="timer-display" class="timer-display">00:00</div>
+                    <div class="button-row">
+                        <button id="start-timer" class="btn btn-success">Start</button>
+                        <button id="pause-timer" class="btn btn-warning">Pause</button>
+                        <button id="stop-timer" class="btn btn-danger">Stop</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
